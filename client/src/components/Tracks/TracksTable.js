@@ -9,7 +9,7 @@ import { API_URL } from "../../constants";
 class TracksTable extends Component {
   constructor(props) {
     super(props);
-    this.state = { tracks: [] };
+    this.state = { tracks: [], elements: [] };
   }
 
   componentDidMount() {
