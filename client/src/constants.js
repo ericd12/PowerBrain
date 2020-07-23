@@ -1,4 +1,4 @@
-export const API_URL = " //ec2-54-90-47-44.compute-1.amazonaws.com";
+export const API_URL = "http://localhost:5000";
 
 export const BLANK_ELEMENT = {
   elementCategory: "",
