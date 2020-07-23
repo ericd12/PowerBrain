@@ -13,6 +13,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "client/build")));
 
+//testing
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 mongoose.connect("mongodb://127.0.0.1:27017/powerbrain", {
   useNewUrlParser: true,
   useCreateIndex: true,
