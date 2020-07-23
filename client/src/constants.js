@@ -1,4 +1,4 @@
-export const API_URL = "http://ec2-52-207-202-20.compute-1.amazonaws.com"
+export const API_URL = "//ec2-52-207-202-20.compute-1.amazonaws.com/api"
 
 export const BLANK_ELEMENT = {
   elementCategory: "",
