@@ -13,7 +13,7 @@ class TracksTable extends Component {
   }
 
   componentDidMount() {
-    console.log({ API_URL})
+    console.log({ API_URL}, 'yoooooo')
     Promise.all([
       axios.get(`${API_URL}/elements/`),
       axios.get(`${API_URL}/tracks/`),
