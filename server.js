@@ -3,6 +3,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
 const bodyParser = require('body-parser');
+const config = require('config');
+
+
 
 const elementsRouter = require("./routes/elements");
 const tracksRouter = require("./routes/tracks");
@@ -20,6 +23,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //testing
+mongoose.connect('mongodb://ec2-3-87-139-107.compute-1.amazonaws.com:27017/powerbrain', {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify : false
+});
 
 app.use(express.static('client/build'));
 
@@ -28,18 +37,6 @@ app.get('*', (req,res) => {
 })
 
 
-mongoose.connect(process.env.MONGODB_URI ||"mongodb://127.0.0.1:27017/powerbrain", {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
-
-mongoose.set('useFindAndModify', false);
-
-const { connection } = mongoose;
-connection.once("open", () => {
-  console.log("db connection created successfully");
-});
 
 app.use("/api/elements", elementsRouter);
 app.use("/api/tracks", tracksRouter);
