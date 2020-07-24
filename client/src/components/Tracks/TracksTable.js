@@ -20,7 +20,7 @@ class TracksTable extends Component {
     ]).then(([e, t]) => {
       const { data: elements } = e;
       const { data: tracks } = t;
-
+console.log({ elements, tracks })
       this.setState({
         elements: elements.reduce((all, one) => {
           return {
@@ -63,7 +63,7 @@ class TracksTable extends Component {
                 <TracksTableRow
                   key={currentTrack._id}
                   deleteTrack={this.deleteTrack}
-                  {...{ ...currentTrack, elements }}
+                  {...{ ...currentTrack, elements: elements || [] }}
                 />
               );
             })}
