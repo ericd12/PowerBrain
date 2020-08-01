@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "node-env-run server --exec nodemon"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.25",
     "mongoose-autopopulate": "^0.12.2",
+    "node-env-run": "^3.0.2",
     "path": "^0.12.7"
   }
 }

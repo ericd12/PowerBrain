@@ -98,8 +98,9 @@ const ElementForm = ({
               onChangeDropdown(e, dropdowns.formats);
             }}
             required
-            value={elementFormat && elementFormat._id}
+            value={elementFormat._id}
           >
+            <option selected disabled>Choose ...</option>
             {Object.keys(dropdowns.formats).map((format, idx) => {
               return (
                 <option key={`format-${format}`} value={format}>
@@ -134,7 +135,8 @@ const ElementForm = ({
             }}
             required
             value={elementCategory._id}
-          >
+          >       
+            <option selected disabled>Choose ...</option>
             {Object.keys(dropdowns.categories).map((item, idx) => {
               return (
                 <option key={`category-${item}`} value={item}>
@@ -169,7 +171,8 @@ const ElementForm = ({
             }}
             required
             value={elementMarket._id}
-          >
+          >            
+            <option selected disabled>Choose ...</option>
             {Object.keys(dropdowns.markets).map((id, idx) => {
               return (
                 <option key={`market-${id}`} value={id}>
