@@ -46,7 +46,7 @@ const TracksTableRow = ({
         </StyledTable>
       </td>
       <td style={{ whiteSpace: "nowrap" }}>
-        <Link to={`/tracks/edit/${_id}`}>
+        <Link to={`/-tracks/edit/${_id}`}>
           <Button size="sm" variant="outline-warning">
             edit
           </Button>

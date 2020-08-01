@@ -13,14 +13,12 @@ class TracksTable extends Component {
   }
 
   componentDidMount() {
-    console.log({ API_URL}, 'yoooooo')
     Promise.all([
       axios.get(`${API_URL}/elements/`),
       axios.get(`${API_URL}/tracks/`),
     ]).then(([e, t]) => {
       const { data: elements } = e;
       const { data: tracks } = t;
-console.log({ elements, tracks })
       this.setState({
         elements: elements.reduce((all, one) => {
           return {

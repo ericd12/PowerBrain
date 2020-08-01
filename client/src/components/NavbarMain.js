@@ -19,30 +19,30 @@ const NavbarMain = () => {
         <Nav className="mr-auto">
           {/* <Nav.Link href="/">Home</Nav.Link> */}
           <NavDropdown id="element-dropdown" title="Elements">
-            <NavDropdown.Item href="/elements/create">
+            <NavDropdown.Item href="/-elements/create">
               Create Element
             </NavDropdown.Item>
-            <NavDropdown.Item href="/elements">
+            <NavDropdown.Item href="/-elements">
               Manage Elements
             </NavDropdown.Item>
             <Dropdown.Divider />
             <NavDropdown id="items-dropdown" title="Manage Dropdown Options">
-              <NavDropdown.Item href="/formats">Format</NavDropdown.Item>
-              <NavDropdown.Item href="/categories">Category</NavDropdown.Item>
-              <NavDropdown.Item href="/markets">Market</NavDropdown.Item>
+              <NavDropdown.Item href="/-formats">Format</NavDropdown.Item>
+              <NavDropdown.Item href="/-categories">Category</NavDropdown.Item>
+              <NavDropdown.Item href="/-markets">Market</NavDropdown.Item>
             </NavDropdown>
           </NavDropdown>
           <NavDropdown id="track-dropdown" title="Tracks">
-            <NavDropdown.Item href="/tracks/create">
+            <NavDropdown.Item href="/-tracks/create">
               Create Track
             </NavDropdown.Item>
-            <NavDropdown.Item href="/tracks">Manage Tracks</NavDropdown.Item>
+            <NavDropdown.Item href="/-tracks">Manage Tracks</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown id="basic-nav-dropdown" title="Programs">
-            <NavDropdown.Item href="/programs/create">
+            <NavDropdown.Item href="/-programs/create">
               Create Program
             </NavDropdown.Item>
-            <NavDropdown.Item href="/programs">
+            <NavDropdown.Item href="/-programs">
               Manage Programs
             </NavDropdown.Item>
           </NavDropdown>

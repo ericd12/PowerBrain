@@ -1,4 +1,4 @@
-export const API_URL = "/api"
+export const API_URL = "http:/api";
 
 export const BLANK_ELEMENT = {
   elementCategory: "",

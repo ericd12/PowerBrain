@@ -7,7 +7,7 @@ const MarketsTableRow = ({ elementMarket, _id, deleteMarket }) => (
   <StyledTableRow>
     <td>{elementMarket}</td>
     <td>
-      <Link to={`/markets/edit/${_id}`}>
+      <Link to={`/-markets/edit/${_id}`}>
         <Button size="sm" variant="outline-warning">
           edit
         </Button>

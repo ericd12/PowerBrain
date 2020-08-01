@@ -7,7 +7,7 @@ const FormatsTableRow = ({ elementFormat, _id, deleteFormat }) => (
   <StyledTableRow>
     <td>{elementFormat}</td>
     <td>
-      <Link to={`/formats/edit/${_id}`}>
+      <Link to={`/-formats/edit/${_id}`}>
         <Button size="sm" variant="outline-warning">
           edit
         </Button>

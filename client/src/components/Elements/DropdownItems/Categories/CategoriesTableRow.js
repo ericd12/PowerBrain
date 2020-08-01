@@ -7,7 +7,7 @@ const CategoriesTableRow = ({ elementCategory, _id, deleteCategory }) => (
   <StyledTableRow>
     <td>{elementCategory}</td>
     <td>
-      <Link to={`/categories/edit/${_id}`}>
+      <Link to={`/-categories/edit/${_id}`}>
         <Button size="sm" variant="outline-warning">
           edit
         </Button>

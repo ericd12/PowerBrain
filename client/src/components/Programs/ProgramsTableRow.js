@@ -13,7 +13,7 @@ const ProgramsTableRow = ({
       <td>{programNumber}</td>
       <td>{programName}</td>
       <td style={{ whiteSpace: "nowrap" }}>
-        <Link to={`/programs/edit/${_id}`}>
+        <Link to={`/-programs/edit/${_id}`}>
           <Button size="sm" variant="outline-warning">
             edit
           </Button>

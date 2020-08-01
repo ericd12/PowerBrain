@@ -32,7 +32,7 @@ const ElementsTableRow = ({
       <td>{elementPhysRating}</td>
       <td>{elementLink}</td>
       <td style={{ whiteSpace: "nowrap" }}>
-        <Link to={`/elements/edit/${_id}`}>
+        <Link to={`/-elements/edit/${_id}`}>
           <Button size="sm" variant="outline-warning">
             edit
           </Button>

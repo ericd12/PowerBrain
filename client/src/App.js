@@ -32,26 +32,26 @@ const App = () => {
       <div id="App">
         <NavbarMain />
         <br />
-        <Route component={ElementsTable} exact path="/elements" />
-        <Route component={CreateElement} exact path="/elements/create" />
-        <Route component={ManageElement} exact path="/elements/edit/:id" />
+        <Route component={ElementsTable} exact path="/-elements" />
+        <Route component={CreateElement} exact path="/-elements/create" />
+        <Route component={ManageElement} exact path="/-elements/edit/:id" />
 
-        <Route component={CreateFormat} exact path="/formats" />
-        <Route component={ManageFormat} exact path="/formats/edit/:id" />
+        <Route component={CreateFormat} exact path="/-formats" />
+        <Route component={ManageFormat} exact path="/-formats/edit/:id" />
 
-        <Route component={CreateCategory} exact path="/categories" />
-        <Route component={ManageCategory} exact path="/categories/edit/:id" />
+        <Route component={CreateCategory} exact path="/-categories" />
+        <Route component={ManageCategory} exact path="/-categories/edit/:id" />
 
-        <Route component={CreateMarket} exact path="/markets" />
-        <Route component={ManageMarket} exact path="/markets/edit/:id" />
+        <Route component={CreateMarket} exact path="/-markets" />
+        <Route component={ManageMarket} exact path="/-markets/edit/:id" />
 
-        <Route component={TracksTable} exact path="/tracks" />
-        <Route component={CreateTrack} exact path="/tracks/create" />
-        <Route component={ManageTrack} exact path="/tracks/edit/:id" />
+        <Route component={TracksTable} exact path="/-tracks" />
+        <Route component={CreateTrack} exact path="/-tracks/create" />
+        <Route component={ManageTrack} exact path="/-tracks/edit/:id" />
 
-        <Route component={ProgramsTable} exact path="/programs" />
-        <Route component={CreateProgram} exact path="/programs/create" />
-        <Route component={ManageProgram} exact path="/programs/edit/:id" />
+        <Route component={ProgramsTable} exact path="/-programs" />
+        <Route component={CreateProgram} exact path="/-programs/create" />
+        <Route component={ManageProgram} exact path="/-programs/edit/:id" />
       </div>
     </Router>
   );
